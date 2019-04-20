@@ -1,1 +1,8 @@
 runtime: python37
+
+handlers:
+# Matches requests to /images/... to files in static/images/...
+- url: /images
+  static_dir: static/images
+- url: /templates
+  static_dir: templates
